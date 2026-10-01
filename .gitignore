@@ -1,0 +1,29 @@
+# VS Code / local editor files
+.vscode/
+.idea/
+.vs/
+*.csproj.user
+*.suo
+*.user
+
+# Unity generated folders
+FPS Official Project/Library/
+FPS Official Project/Temp/
+FPS Official Project/obj/
+FPS Official Project/Logs/
+FPS Official Project/Build/
+FPS Official Project/Builds/
+FPS Official Project/UserSettings/Layouts/
+FPS Official Project/UserSettings/Search.*
+FPS Official Project/Assets/AssetStoreTools*
+FPS Official Project/Assets/Plugins/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Optional: ignore Unity lock and cache files
+FPS Official Project/*.pid
+FPS Official Project/*.lock
