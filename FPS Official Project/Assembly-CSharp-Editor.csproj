@@ -68,14 +68,14 @@
     <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\CowsinsManager\ITab.cs" />
     <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\DraggableButtonInSceneView.cs" />
     <Compile Include="Assets\Cowsins\Scripts\Editor\Unity6WindowEditor.cs" />
-    <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\CowsinsManager\BaseCowsinsManagerTabs.cs" />
     <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\AddonSymbolTracker.cs" />
     <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\CowsinsManager\MigrationCowsinsManagerTab.cs" />
     <Compile Include="Assets\Cowsins\Scripts\UI\Modules\Editor\UIManagerEditor.cs" />
     <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\CowsinsManager\WeaponsCowsinsManagerTab.cs" />
     <Compile Include="Assets\Cowsins\Scripts\Editor\TagLayerInitializationManager.cs" />
-    <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\CowsinsManager\CustomTabEditorWindow.cs" />
     <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\WeaponCreatorAssistant.cs" />
+    <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\CowsinsManager\BaseCowsinsManagerTabs.cs" />
+    <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\CowsinsManager\CustomTabEditorWindow.cs" />
     <Compile Include="Assets\Cowsins\Scripts\Editor\Experimental\ExternalButtonRegister.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -735,6 +735,18 @@
       <HintPath>Library\PackageCache\com.unity.analytics@c9d14a6bdec6\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@ec2c217e4cb2\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Library\PackageCache\com.unity.services.wire@aba8a6fb1fe2\Plugins\websocket-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.5.10f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
       <Private>False</Private>
@@ -1311,6 +1323,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Services.QoS">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.QoS.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
       <Private>False</Private>
@@ -1329,6 +1345,18 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Services.Multiplayer.Editor.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Multiplayer.Editor.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing.Editor.Authoring.Core">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.Editor.Authoring.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Networking.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Networking.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Purchasing">
@@ -1371,6 +1399,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Components.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
       <Private>False</Private>
@@ -1399,12 +1431,24 @@
       <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Services.Multiplayer.Editor.Matchmaker.Authoring">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Multiplayer.Editor.Matchmaker.Authoring.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Services.Authentication.PlayerAccounts">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.PlayerAccounts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor.Assistant">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.Assistant.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Services.Authentication">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
@@ -1413,6 +1457,14 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Networking.Transport">
+      <HintPath>Library\ScriptAssemblies\Unity.Networking.Transport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Microsoft.GDK.Tools.Editor">
@@ -1431,6 +1483,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Purchasing.SecurityCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
       <Private>False</Private>
@@ -1447,6 +1503,14 @@
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Services.Multiplayer">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Multiplayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.004">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.004.dll</HintPath>
       <Private>False</Private>
@@ -1461,6 +1525,10 @@
     </Reference>
     <Reference Include="Unity.Purchasing.Stores.XboxCloudServices">
       <HintPath>Library\ScriptAssemblies\Unity.Purchasing.Stores.XboxCloudServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.InputSystem">
@@ -1488,6 +1556,18 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{53DC6E66-7024-1DCC-B61A-88DAFCCDF225}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Blocks.Sessions.csproj">
+      <Project>{9EC4A48A-5867-C73B-5D1E-6AA298478E9E}</Project>
+      <Name>Blocks.Sessions</Name>
+    </ProjectReference>
+    <ProjectReference Include="Blocks.Common.csproj">
+      <Project>{4E5C5C0E-344C-19CF-F4D5-B621DE19380B}</Project>
+      <Name>Blocks.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="Blocks.Sessions.Common.csproj">
+      <Project>{9A31D296-392C-30F8-711C-0F442A82625E}</Project>
+      <Name>Blocks.Sessions.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

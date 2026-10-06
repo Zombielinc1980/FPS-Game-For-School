@@ -27,3 +27,11 @@ Thumbs.db
 # Optional: ignore Unity lock and cache files
 FPS Official Project/*.pid
 FPS Official Project/*.lock
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+.vs/

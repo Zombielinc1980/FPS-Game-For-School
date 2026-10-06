@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3a2891220dbf3438e129c84de05063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueID: 10358f71-3551-466a-be03-7237b74ecba3
+  uniqueID: b33e7db8-ca4f-4859-acd9-6ca8df744af7
   _name: CircularTarget
   health: 0
   shield: 0
